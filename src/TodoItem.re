@@ -99,7 +99,12 @@ let make =
                 )>
                 (ReasonReact.string(todo.title))
               </label>
-              <button className="destroy" onClick=((_) => onDestroy()) />
+              <button
+                className="destroy"
+                onClick=((_) => onDestroy())
+              >
+                (ReasonReact.string("Delete"))
+              </button>
             </div>
             <input
               ref=(handle(setEditFieldRef))

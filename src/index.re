@@ -1,7 +1,9 @@
-[%bs.raw {|require('./index.css')|}];
+/* [%bs.raw {|require('./index.css')|}];
 
-[@bs.module "./registerServiceWorker"] external register_service_worker : unit => unit = "default";
+/* [@bs.module "./registerServiceWorker"] external register_service_worker : unit => unit = "default"; */
 
-ReactDOMRe.renderToElementWithId(<App message="Welcome to React and Reason" />, "root");
+ReactDOMRe.renderToElementWithId(<Top />, "root");
 
-register_service_worker();
+/* register_service_worker(); */ */
+
+ReactDOMRe.renderToElementWithId(<App />, "root");
